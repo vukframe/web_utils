@@ -25,6 +25,10 @@ public class Response<T> {
         this.messages = Collections.singletonList(message);
     }
 
+    public Response(List<Message> messages) {
+        this.messages = messages;
+    }
+
     public Response(T data, Message message){
         this.data = data;
         this.messages = Collections.singletonList(message);
